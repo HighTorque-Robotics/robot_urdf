@@ -1,25 +1,23 @@
-## 说明
+This repository contains the latest revised versions of URDF and XML files for all robots (Mini Hi, Mini Pi plus, Mini Pi) of HighTorque Robotics, and will be updated continuously...
 
-该仓库包含了高擎机电所有机器人(Mini Hi、Mini Pi plus、Mini Pi)的urdf、xml最新修订版合集，持续更新中...
+## Change Log
 
-## 修改日志
-
-**2025.09.04**：新增hi_25dof xml文件，修复pi_12dof左右腿质量问题。
+**2025.09.04**：Added the new hi_25dof XML file and fixed the left/right leg mass issue of pi_12dof.
 
 ![image-20250904181209991](./README.assets/image-20250904181209991.png)
 
 
 
-**2025.09.03**： 将小hi 25自由度urdf上传 ，无xml；pi plus 24dof urdf上传，其中xml是20dof的。
+**2025.09.03**：  Uploaded the 25-DOF URDF for Mini Hi (no XML file); uploaded the 24-DOF URDF for Pi Plus, with the XML file being 20-DOF.
 
 
 
-**2025.08.28**：将小pi初始位置归为竖直。
+**2025.08.28**：Set the initial position of Mini Pi to vertical.
 
-训练时，default pos可以参考：
+For training, you can refer to the default position:
 
 ```python
-    # 设置机器人默认关节角度
+    # Set default joint angles for the robot
     default_joint_angles = [
         -0.25,  # r_hip_pitch_joint
         0.0,    # r_hip_roll_joint
@@ -34,6 +32,7 @@
         -0.4,   # l_ankle_pitch_joint
         0.0     # l_ankle_roll_joint
     ]
+
 ```
 
 
